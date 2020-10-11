@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.activity.MainActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00a2cf"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+     android:layout_height="70dp"
+     android:background="#9966ff">
+     
+    <TextView
+     android:id="@+id/call_num"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:maxLength="14"
+     android:layout_centerHorizontal="true"
+     android:textSize="42dp"
+     android:textColor="#fff" />
+    <ImageView
+        android:id="@+id/del"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/del"
+        android:onClick="OnClick" />"
+   </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+   <GridLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="70dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:rowCount="4" >
+
+
+    <Button
+        android:layout_width="100dp"
+         android:layout_height="60dp"
+        android:id="@+id/one"
+        android:text="1" 
+        android:onClick="OnClick"/>
+    
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/two"
+        android:text="2" 
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/three"
+        android:text="3" 
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/four"
+        android:text="4"
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/five"
+        android:text="5"
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/six"
+        android:text="6"
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/seven"
+        android:text="7"
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/eight"
+        android:text="8"
+        android:onClick="OnClick" />
+    
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/nine"
+        android:text="9"
+        android:onClick="OnClick" />
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/star"
+        android:text="*"
+        android:onClick="OnClick" />
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/zero"
+        android:text="0"
+        android:onClick="OnClick" />
+    <Button
+         android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/jing"
+        android:text="#"
+        android:onClick="OnClick" />
+  </GridLayout> 
+ <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <Button 
+        android:id="@+id/ring_call"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="呼叫"
+        android:onClick="OnClick" />
+    
+    <Button 
+        android:id="@+id/ring_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="+新建联系人"
+        android:onClick="OnClick" />
+  </RelativeLayout>
+ </RelativeLayout> 
+
+</LinearLayout>

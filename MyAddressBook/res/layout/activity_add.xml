@@ -1,0 +1,139 @@
+<LinearLayout   
+          xmlns:android="http://schemas.android.com/apk/res/android"  
+          android:layout_width="fill_parent"  
+          android:layout_height="wrap_content"  
+          android:orientation="vertical">  
+   <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+       android:background="#00a2cf">
+        <ImageView   
+                  android:id="@+id/save"   
+                  android:layout_width="30dp"  
+                  android:layout_height="30dp"           
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/confirm" />  
+             
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="新建联系人"/> 
+    <ImageView    
+                  android:id="@+id/img_return"  
+                  android:layout_width="30dp"  
+                  android:layout_height="30dp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="10dp" 
+                  android:src="@drawable/cancel"   />  
+
+   </RelativeLayout>
+     <LinearLayout   
+             android:id="@+id/widget205"  
+             android:layout_width="fill_parent"  
+             android:layout_height="60dp"   
+             android:layout_marginLeft="10dp" 
+             android:layout_marginRight="10dp"> 
+             <ImageButton   
+                 android:id="@+id/image_button"  
+                 android:layout_width="60dp"  
+                 android:layout_height="fill_parent"   
+                 android:src="@drawable/head"
+                 android:scaleType="centerInside"  >
+             </ImageButton>     
+             <EditText    
+                 android:id="@+id/username"   
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"   
+                 android:scrollbars="vertical"   
+                 android:hint="姓名"  
+                 android:gravity="top" 
+                 android:layout_gravity="center_vertical" />   
+      </LinearLayout> 
+     <ScrollView
+         android:id="@+id/ScrollView01"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent" >
+       
+          <LinearLayout    
+              android:layout_width="fill_parent"  
+              android:layout_height="wrap_content"   
+              android:orientation="vertical"  
+              android:layout_marginRight="10dp"   
+              android:layout_marginLeft="10dp">  
+              <TextView    
+                  android:layout_height="wrap_content"  
+                  android:layout_width="wrap_content"   
+                  android:text="手机：" 
+                  android:layout_marginTop="15dp" 
+                  android:textSize="20dp" />  
+              <EditText    
+                  android:id="@+id/mobilephone"  
+                  android:layout_width="fill_parent"   
+                  android:layout_height="wrap_content"  
+                  android:hint="手机"   
+                  android:phoneNumber="true" />
+
+              <TextView    
+                  android:layout_height="wrap_content"  
+                  android:layout_width="wrap_content"   
+                  android:text="家庭电话"  
+                   android:layout_marginTop="15dp" 
+                  android:textSize="20dp" />  
+              <EditText    
+                  android:id="@+id/familyphone"  
+                  android:layout_width="fill_parent"   
+                  android:layout_height="wrap_content"  
+                  android:hint="家庭电话"   
+                  android:phoneNumber="true" />
+         
+              <TextView    
+                  android:layout_height="wrap_content"  
+                  android:layout_width="wrap_content"   
+                  android:text="公司电话"  
+                   android:layout_marginTop="15dp" 
+                  android:textSize="20dp" />  
+              <EditText    
+                  android:id="@+id/officephone"  
+                  android:layout_width="fill_parent"   
+                  android:layout_height="wrap_content"  
+                  android:scrollbars="vertical"    
+                  android:gravity="top" 
+                  android:hint="公司电话"   
+                  android:phoneNumber="true" />
+         
+              <TextView    
+                  android:layout_height="wrap_content"  
+                  android:layout_width="wrap_content"   
+                  android:text="住址"  
+                   android:layout_marginTop="15dp" 
+                  android:textSize="20dp" />  
+              <EditText    
+                  android:id="@+id/address"  
+                  android:layout_width="fill_parent"   
+                  android:layout_height="wrap_content"  
+                  android:scrollbars="vertical"    
+                  android:gravity="top" 
+                  android:hint="住址" />
+               <TextView    
+                  android:layout_height="wrap_content"  
+                  android:layout_width="wrap_content"   
+                  android:text="群组"  
+                   android:layout_marginTop="15dp" 
+                  android:textSize="20dp" />  
+              <Spinner    
+                  android:id="@+id/group1"  
+                  android:layout_width="fill_parent"   
+                  android:layout_height="wrap_content"  
+                  android:scrollbars="vertical"    
+                  android:gravity="top" 
+                  android:entries="@array/group" />"
+          </LinearLayout>     
+     </ScrollView>  
+ </LinearLayout>

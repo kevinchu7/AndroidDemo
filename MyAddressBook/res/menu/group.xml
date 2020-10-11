@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.contacts.GroupActivity" >
+
+    <item 
+     android:id="@+id/gp_friend"
+     android:orderInCategory="100" 
+     android:showAsAction="never"
+     android:title="朋友"/> 
+    <item 
+    android:id="@+id/gp_family"
+    android:orderInCategory="101" 
+    android:title="家人"
+    android:showAsAction="never"/> 
+   <item 
+    android:id="@+id/gp_worker"
+    android:orderInCategory="102" 
+    android:title="同事"
+     android:showAsAction="never"/>
+   <item 
+    android:id="@+id/gp_class"
+    android:orderInCategory="103" 
+    android:title="同学"
+     android:showAsAction="never"/>  
+</menu>

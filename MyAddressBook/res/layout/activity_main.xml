@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+       android:background="#00a2cf">
+   <Button
+        android:id="@+id/ring"
+        android:layout_width="50dp"  
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="拨号"
+        android:background="@null"
+        android:textColor="#fff"
+        android:onClick="onClick"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="联系人"/> 
+    <Button 
+            android:id="@+id/mygroup"
+            android:layout_width="50dp"  
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" 
+            android:background="@null"
+            android:textColor="#fff"
+            android:text="群组"
+            android:onClick="onClick"/>
+</RelativeLayout>
+<EditText
+     android:id="@+id/et_search"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     
+     android:hint="搜索联系人" />
+    
+ <ListView
+     android:id="@+id/listview"
+     android:layout_width="match_parent"
+     android:layout_height="fill_parent"
+     android:choiceMode="singleChoice" />"
+ 
+</LinearLayout>
+
